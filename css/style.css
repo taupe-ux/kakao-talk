@@ -1,0 +1,20 @@
+@import "reset.css";
+@import "vavariables.css";
+
+/*components*/
+@import "components/status-bar.css";
+
+/*screens*/
+@import "screens/welcome-header.css";
+@import "screens/login-main.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.first-body {
+  background-image: url("../img/kakao-poket-02.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 150%;
+  background-color: #fffffd;
+}
