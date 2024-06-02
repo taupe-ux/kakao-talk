@@ -14,6 +14,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   font-size: 20px;
   transition: border-bottom 0.3s ease-in-out;
+  background-color: #a9d7fb;
 }
 
 .main-login input[type="text"]::placeholder,
@@ -42,4 +43,28 @@
 
 .main-login a {
   text-align: center;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: #fae100;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
 }
